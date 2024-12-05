@@ -14,7 +14,83 @@ datasource db {
 }
 
 model User {
-  id       Int    @id @default(autoincrement())
-  name     String @db.VarChar(255)
-  password String @db.VarChar(255)
+  id        Int            @id @default(autoincrement())
+  name      String         @db.VarChar(255)
+  password  String         @db.VarChar(255)
+  parent_id Int? // Optional to allow root users without a parent
+  parent    User?          @relation("UserToParent", fields: [parent_id], references: [id])
+  children  User[]         @relation("UserToParent") // Inverse relation
+  role_id   Int
+  role      Role           @relation(fields: [role_id], references: [id])
+  history   User_History[]
+}
+
+model Role {
+  id    Int    @id @default(autoincrement())
+  name  String @db.VarChar(255) // Role name, e.g., "Admin", "User"
+  users User[] @relation // Inverse relation from User table
+}
+
+model Case {
+  id         Int             @id @default(autoincrement())
+  name       String          @db.VarChar(255)
+  category   CaseCategory
+  level      Level
+  status     Int
+  timelines  Case_Timeline[]
+  created_at DateTime
+}
+
+model Case_Timeline {
+  id      Int @id @default(autoincrement())
+  case_id Int
+
+  status         Int
+  date           DateTime
+  attach_files   String[] // Array of file URLs
+  deadline       DateTime
+  comments       String
+  referred_by    Int?
+  referred_to    Int? // Foreign key if referring to another user
+  collab_id      Int? // Foreign key to Collab
+  description    String
+  case           Case     @relation(fields: [case_id], references: [id], onDelete: Cascade)
+  referredToUser User?    @relation("ReferredTo", fields: [referred_to], references: [id], onDelete: SetNull)
+  referredVtUser User?    @relation("ReferredBy", fields: [referred_by], references: [id], onDelete: SetNull)
+  collab         Collab?  @relation(fields: [collab_id], references: [id], onDelete: SetNull)
+}
+
+model Collab {
+  id Int @id @default(autoincrement())
+  
+}
+
+model User_History {
+  id         Int      @id @default(autoincrement())
+  case_id    Int
+  status     Int
+  start_date DateTime
+  end_date   DateTime
+  deadline   DateTime
+  user_id    Int
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  case Case @relation(fields: [case_id], references: [id], onDelete: Cascade)
+}
+
+model Collab 
+
+enum Level {
+  A
+  B
+  C
+}
+
+enum CaseCategory {
+  Politicians
+  Political_Activists
+  Social_Workers
+  Social_Media_User
+  Foreigner
+  Others
 }
