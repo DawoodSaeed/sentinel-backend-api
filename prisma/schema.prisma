@@ -23,6 +23,13 @@ model User {
   role_id   Int
   role      Role           @relation(fields: [role_id], references: [id])
   history   User_History[]
+
+  referedBy Case_Timeline[] @relation("ReferredTo")
+  referedTo Case_Timeline[] @relation("ReferredBy")
+  // collabs   Collab[]        // Associated collaborations
+
+  moderatorCollab   Collab[] @relation("moderatoCollab")
+  participantCollab Collab[] @relation("CollabUsers")
 }
 
 model Role {
@@ -31,15 +38,27 @@ model Role {
   users User[] @relation // Inverse relation from User table
 }
 
+// Patch request can be made by the required user to edit its content 
+// according to its liking...
+
 model Case {
-  id         Int             @id @default(autoincrement())
-  name       String          @db.VarChar(255)
-  category   CaseCategory
-  level      Level
-  status     Int
-  timelines  Case_Timeline[]
-  created_at DateTime
+  id           Int             @id @default(autoincrement())
+  name         String          @db.VarChar(255)
+  category     CaseCategory
+  level        Level
+  status       Int
+  timelines    Case_Timeline[]
+  created_at   DateTime
+  User_History User_History[]
+  Collab       Collab[]
 }
+
+// Status == 1 => The case has been initiated 
+// Status == 2 => The cases has been send to the moderator.
+// The message will be received by the moderator and the expert
+// status == 3 Case has been send to the moderator.
+// Status == -1 Case has been disaproved.
+// Status == 0 Case has been done.
 
 model Case_Timeline {
   id      Int @id @default(autoincrement())
@@ -57,12 +76,30 @@ model Case_Timeline {
   case           Case     @relation(fields: [case_id], references: [id], onDelete: Cascade)
   referredToUser User?    @relation("ReferredTo", fields: [referred_to], references: [id], onDelete: SetNull)
   referredVtUser User?    @relation("ReferredBy", fields: [referred_by], references: [id], onDelete: SetNull)
-  collab         Collab?  @relation(fields: [collab_id], references: [id], onDelete: SetNull)
 }
 
+// collab needs a moderator;
+// 1 2 22 4
+// 2 2 22 3
+
 model Collab {
-  id Int @id @default(autoincrement())
-  
+  id            Int       @id @default(autoincrement())
+  case_id       Int
+  case          Case      @relation(fields: [case_id], references: [id], onDelete: Cascade) // Ensure the task exists
+  moderator     Int
+  moderatorUser User?     @relation("moderatoCollab", fields: [moderator], references: [id]) // Ensure the moderator is a valid user
+  users         User[]    @relation("CollabUsers") // Many-to-many relation for all participants
+  messages      Message[] // Messages within the collaboration
+}
+
+model Message {
+  id          Int     @id @default(autoincrement())
+  message     String
+  collab_id   Int
+  user_id     Int
+  attach_file String
+  Collab      Collab? @relation(fields: [collabId], references: [id])
+  collabId    Int?
 }
 
 model User_History {
@@ -77,8 +114,6 @@ model User_History {
   user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
   case Case @relation(fields: [case_id], references: [id], onDelete: Cascade)
 }
-
-model Collab 
 
 enum Level {
   A
