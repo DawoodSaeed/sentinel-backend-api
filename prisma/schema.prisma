@@ -14,27 +14,28 @@ datasource db {
 }
 
 model User {
-  id        Int            @id @default(autoincrement())
-  name      String         @db.VarChar(255)
-  password  String         @db.VarChar(255)
-  parent_id Int? // Optional to allow root users without a parent
-  parent    User?          @relation("UserToParent", fields: [parent_id], references: [id])
-  children  User[]         @relation("UserToParent") // Inverse relation
-  role_id   Int
-  role      Role           @relation(fields: [role_id], references: [id])
-  history   User_History[]
-
-  referedBy Case_Timeline[] @relation("ReferredTo")
-  referedTo Case_Timeline[] @relation("ReferredBy")
+  id             Int             @id @default(autoincrement())
+  name           String          @db.VarChar(255)
+  password       String          @db.VarChar(255)
+  parent_id      Int? // Optional to allow root users without a parent
+  parent         User?           @relation("UserToParent", fields: [parent_id], references: [id])
+  children       User[]          @relation("UserToParent") // Inverse relation
+  role_id        Int
+  role           Role            @relation(fields: [role_id], references: [id])
+  history        User_History[]
+  is_initailizer Boolean         @default(false)
+  referedBy      Case_Timeline[] @relation("ReferredTo")
+  referedTo      Case_Timeline[] @relation("ReferredBy")
   // collabs   Collab[]        // Associated collaborations
 
   moderatorCollab   Collab[] @relation("moderatoCollab")
   participantCollab Collab[] @relation("CollabUsers")
+  Case              Case[]
 }
 
 model Role {
   id    Int    @id @default(autoincrement())
-  name  String @db.VarChar(255) // Role name, e.g., "Admin", "User"
+  name  String @db.VarChar(255) // Role name, e.g., "Moderator", "Cheif Exper", "Expert"
   users User[] @relation // Inverse relation from User table
 }
 
@@ -51,6 +52,9 @@ model Case {
   created_at   DateTime
   User_History User_History[]
   Collab       Collab[]
+
+  moderator    User @relation(fields: [moderator_id], references: [id])
+  moderator_id Int
 }
 
 // Status == 1 => The case has been initiated 
@@ -60,44 +64,52 @@ model Case {
 // Status == -1 Case has been disaproved.
 // Status == 0 Case has been done.
 
+// expert == cheif expert (miderator)
+// modertaor == moderator
+// modertaor  === expert (assignment)
 model Case_Timeline {
-  id             Int      @id @default(autoincrement())
-  case_id        Int
-  status         Int
-  date           DateTime
-  attach_files   String[] // Array of file URLs
-  deadline       DateTime
-  referred_by    Int?
-  referred_to    Int? // Foreign key if referring to another user
-  collab_id      Int // Foreign key to Collab
-  remarks        String
-  collab         Collab   @relation(fields: [collab_id], references: [id], onDelete: Cascade)
-  case           Case     @relation(fields: [case_id], references: [id], onDelete: Cascade)
-  referredToUser User?    @relation("ReferredTo", fields: [referred_to], references: [id], onDelete: SetNull)
-  referredVtUser User?    @relation("ReferredBy", fields: [referred_by], references: [id], onDelete: SetNull)
+  id           Int      @id @default(autoincrement())
+  case_id      Int
+  status       Int
+  date         DateTime
+  attach_files String[] // Array of file URLs
+  deadline     DateTime
+  referred_by  Int?
+  referred_to  Int? // Foreign key if referring to another user
+  collab_id    Int // Foreign key to Collab
+  remarks      String
+
+  collab         Collab @relation(fields: [collab_id], references: [id], onDelete: Cascade)
+  case           Case   @relation(fields: [case_id], references: [id], onDelete: Cascade)
+  referredToUser User?  @relation("ReferredTo", fields: [referred_to], references: [id], onDelete: SetNull)
+  referredByUser User?  @relation("ReferredBy", fields: [referred_by], references: [id], onDelete: SetNull)
 }
 
 model Collab {
-  id            Int             @id @default(autoincrement())
-  case_id       Int
-  case          Case            @relation(fields: [case_id], references: [id], onDelete: Cascade) // Ensure the task exists
+  id Int @id @default(autoincrement())
+
+  // which case I am related to .
+  case_id Int
+  case    Case @relation(fields: [case_id], references: [id], onDelete: Cascade) // Ensure the task exists
+
   moderator     Int
-  moderatorUser User?           @relation("moderatoCollab", fields: [moderator], references: [id]) // Ensure the moderator is a valid user
-  users         User[]          @relation("CollabUsers") // Many-to-many relation for all participants
-  messages      Message[] // Messages within the collaboration
+  moderatorUser User? @relation("moderatoCollab", fields: [moderator], references: [id]) // Ensure the moderator is a valid user
+
+  users    User[]    @relation("CollabUsers") // Many-to-many relation for all participants
+  messages Message[] // Messages within the collaboration
+
   Case_Timeline Case_Timeline[]
 }
 
-
-
 model Message {
-  id          Int     @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   message     String
   collab_id   Int
   user_id     Int
   attach_file String
-  Collab      Collab? @relation(fields: [collabId], references: [id])
+  Collab      Collab?  @relation(fields: [collabId], references: [id])
   collabId    Int?
+  created_at  DateTime
 }
 
 model User_History {

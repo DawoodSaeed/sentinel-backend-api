@@ -1,32 +1,18 @@
 import express, { Request, Response } from "express";
 import routes from "./startup/routes";
-import { PrismaClient } from "@prisma/client";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const prisma = new PrismaClient();
 
-routes(app, prisma);
+routes(app);
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Backend is up and working  ...");
 });
 
-async function main() {
-  app.listen(PORT, () => {
-    console.log(`Server is running at: http://localhost:${PORT}`);
-  });
-}
-
-main()
-  .then(() => {
-    prisma.$disconnect();
-  })
-  .catch((ex) => {
-    console.log("Server has shutown.");
-    prisma.$disconnect();
-    process.exit(0);
-  });
+app.listen(PORT, () => {
+  console.log(`Server is running at: http://localhost:${PORT}`);
+});
 
 // Security Features
 // 1. Santize the input parameters
