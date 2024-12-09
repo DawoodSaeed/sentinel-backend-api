@@ -1,9 +1,8 @@
 import express, { Request, Response } from "express";
-import http from "http";
+import routes from "./startup/routes";
+
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-import routes from "./startup/routes";
 
 routes(app);
 
@@ -11,9 +10,7 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Backend is up and working  ...");
 });
 
-const server = http.createServer(app);
-
-server.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Server is running at: http://localhost:${PORT}`);
 });
 

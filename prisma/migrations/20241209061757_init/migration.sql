@@ -5,6 +5,26 @@ CREATE TYPE "Level" AS ENUM ('A', 'B', 'C');
 CREATE TYPE "CaseCategory" AS ENUM ('Politicians', 'Political_Activists', 'Social_Workers', 'Social_Media_User', 'Foreigner', 'Others');
 
 -- CreateTable
+CREATE TABLE "User" (
+    "id" SERIAL NOT NULL,
+    "name" VARCHAR(255) NOT NULL,
+    "password" VARCHAR(255) NOT NULL,
+    "parent_id" INTEGER,
+    "role_id" INTEGER NOT NULL,
+    "is_initailizer" BOOLEAN NOT NULL DEFAULT false,
+
+    CONSTRAINT "User_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "Role" (
+    "id" SERIAL NOT NULL,
+    "name" VARCHAR(255) NOT NULL,
+
+    CONSTRAINT "Role_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
 CREATE TABLE "Case" (
     "id" SERIAL NOT NULL,
     "name" VARCHAR(255) NOT NULL,
@@ -12,6 +32,7 @@ CREATE TABLE "Case" (
     "level" "Level" NOT NULL,
     "status" INTEGER NOT NULL,
     "created_at" TIMESTAMP(3) NOT NULL,
+    "userId" INTEGER NOT NULL,
 
     CONSTRAINT "Case_pkey" PRIMARY KEY ("id")
 );
@@ -24,11 +45,10 @@ CREATE TABLE "Case_Timeline" (
     "date" TIMESTAMP(3) NOT NULL,
     "attach_files" TEXT[],
     "deadline" TIMESTAMP(3) NOT NULL,
-    "comments" TEXT NOT NULL,
     "referred_by" INTEGER,
     "referred_to" INTEGER,
-    "collab_id" INTEGER,
-    "description" TEXT NOT NULL,
+    "collab_id" INTEGER NOT NULL,
+    "remarks" TEXT NOT NULL,
 
     CONSTRAINT "Case_Timeline_pkey" PRIMARY KEY ("id")
 );
@@ -50,6 +70,7 @@ CREATE TABLE "Message" (
     "user_id" INTEGER NOT NULL,
     "attach_file" TEXT NOT NULL,
     "collabId" INTEGER,
+    "created_at" TIMESTAMP(3) NOT NULL,
 
     CONSTRAINT "Message_pkey" PRIMARY KEY ("id")
 );
@@ -77,6 +98,18 @@ CREATE TABLE "_CollabUsers" (
 
 -- CreateIndex
 CREATE INDEX "_CollabUsers_B_index" ON "_CollabUsers"("B");
+
+-- AddForeignKey
+ALTER TABLE "User" ADD CONSTRAINT "User_parent_id_fkey" FOREIGN KEY ("parent_id") REFERENCES "User"("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "User" ADD CONSTRAINT "User_role_id_fkey" FOREIGN KEY ("role_id") REFERENCES "Role"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "Case" ADD CONSTRAINT "Case_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "Case_Timeline" ADD CONSTRAINT "Case_Timeline_collab_id_fkey" FOREIGN KEY ("collab_id") REFERENCES "Collab"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "Case_Timeline" ADD CONSTRAINT "Case_Timeline_case_id_fkey" FOREIGN KEY ("case_id") REFERENCES "Case"("id") ON DELETE CASCADE ON UPDATE CASCADE;

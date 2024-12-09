@@ -1,5 +1,6 @@
-import express, { Express } from "express";
+import express, { Express, NextFunction, Request, Response } from "express";
 import userRouter from "../routes/User";
+import { PrismaClient } from "@prisma/client";
 
 export default function routes(app: Express) {
   app.use(express.json());
