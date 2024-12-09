@@ -1,5 +1,6 @@
 import winston from "winston";
 import "express-async-errors"; // Ensure async errors are handled
+import path from "path";
 
 // Create the logger instance
 const logger = winston.createLogger({
@@ -58,5 +59,27 @@ process.on("unhandledRejection", (ex) => {
   throw ex; // Rethrow to let uncaughtException handler catch it
 });
 
+// Define the log file path
+const logFilePath = path.join(__dirname, "logs", "app.log");
+
+// Create the logger
+const fileLogger = winston.createLogger({
+  level: "error", // Adjust the level as needed (e.g., 'info', 'warn', etc.)
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.printf(({ timestamp, level, message }) => {
+      return `${timestamp} [${level.toUpperCase()}]: ${message}`;
+    })
+  ),
+  transports: [
+    // File transport
+    new winston.transports.File({
+      filename: logFilePath,
+      handleExceptions: true, // Capture unhandled exceptions
+    }),
+  ],
+  exitOnError: false, // Prevent exiting the process on error
+});
+
 // Export the logger so it can be used in the app
-export { logger };
+export { logger, fileLogger };
