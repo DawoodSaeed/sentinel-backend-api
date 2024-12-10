@@ -1,2 +1,189 @@
 2024-12-09T07:45:03.318Z [[32minfo[39m]: Shutting down the server. Date & Time is: Monday, December 9, 2024 at 12:45:03 PM
 2024-12-09T08:24:40.100Z [[32minfo[39m]: Shutting down the server. Date & Time is: Monday, December 9, 2024 at 1:24:40 PM
+2024-12-09T08:40:07.814Z [[31merror[39m]: [object Object]
+2024-12-09T08:41:20.632Z [[31merror[39m]: "password" is not allowed to be empty
+2024-12-09T09:11:53.990Z [[31merror[39m]: "name" is not allowed to be empty
+2024-12-09T09:12:19.234Z [[32minfo[39m]: Shutting down the server. Date & Time is: Monday, December 9, 2024 at 2:12:19 PM
+2024-12-09T09:20:33.842Z [[32minfo[39m]: ad71d4cd609baee6f9cfa6ccb243462a1969685f30a3a394e37fcef978845717
+2024-12-09T09:20:58.193Z [[32minfo[39m]: Shutting down the server. Date & Time is: Monday, December 9, 2024 at 2:20:58 PM
+2024-12-09T09:25:11.564Z [[32minfo[39m]: Server is running at: http://localhost:3000
+2024-12-09T09:25:30.814Z [[32minfo[39m]: Server is running at: http://localhost:3000
+2024-12-09T09:25:42.935Z [[32minfo[39m]: Server is running at: http://localhost:3000
+2024-12-09T09:25:44.923Z [[32minfo[39m]: Test end point is hit at 
+2024-12-09T09:25:56.189Z [[32minfo[39m]: Server is running at: http://localhost:3000
+2024-12-09T09:26:18.342Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:26:18 PM
+2024-12-09T09:32:44.932Z [[32minfo[39m]: Test end point is hit at Monday, December 9, 2024 at 2:26:18 PM
+2024-12-09T09:37:38.103Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:37:38 PM
+2024-12-09T09:37:39.843Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:37:39 PM
+2024-12-09T09:37:42.172Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:37:42 PM
+2024-12-09T09:37:44.377Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:37:44 PM
+2024-12-09T09:38:00.355Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:38:00 PM
+2024-12-09T09:38:09.593Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:38:09 PM
+2024-12-09T09:38:29.603Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:38:29 PM
+2024-12-09T09:38:37.917Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:38:37 PM
+2024-12-09T09:39:17.788Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:39:17 PM
+2024-12-09T09:39:23.630Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:39:23 PM
+2024-12-09T09:39:32.132Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:39:32 PM
+2024-12-09T09:39:34.794Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:39:34 PM
+2024-12-09T09:39:43.355Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:39:43 PM
+2024-12-09T09:39:47.667Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:39:47 PM
+2024-12-09T09:39:58.792Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:39:58 PM
+2024-12-09T09:40:03.365Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:40:03 PM
+2024-12-09T09:40:06.452Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:40:06 PM
+2024-12-09T09:40:31.342Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:40:31 PM
+2024-12-09T09:40:32.836Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:40:32 PM
+2024-12-09T09:40:53.240Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:40:53 PM
+2024-12-09T09:41:02.390Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:41:02 PM
+2024-12-09T09:41:14.679Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:41:14 PM
+2024-12-09T09:41:19.656Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:41:19 PM
+2024-12-09T09:41:25.174Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:41:25 PM
+2024-12-09T09:41:47.302Z [[31merror[39m]: "name" is required
+2024-12-09T09:42:11.306Z [[32minfo[39m]: [object Object]
+2024-12-09T09:42:26.287Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:42:26 PM
+2024-12-09T09:42:39.133Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:42:39 PM
+2024-12-09T09:42:43.581Z [[31merror[39m]: "password" is required
+2024-12-09T09:44:09.371Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:44:09 PM
+2024-12-09T09:44:22.667Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:44:22 PM
+2024-12-09T09:44:29.011Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:44:28 PM
+2024-12-09T09:44:47.095Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:44:47 PM
+2024-12-09T09:44:51.903Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:44:51 PM
+2024-12-09T09:44:53.530Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:44:53 PM
+2024-12-09T09:45:44.644Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:45:44 PM
+2024-12-09T09:45:55.940Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:45:55 PM
+2024-12-09T09:46:01.818Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:46:01 PM
+2024-12-09T09:46:04.828Z [[31merror[39m]: "password" is required
+2024-12-09T09:46:15.139Z [[32minfo[39m]: [object Object]
+2024-12-09T09:46:22.208Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:46:22 PM
+2024-12-09T09:47:32.423Z [[32minfo[39m]: [object Object]
+2024-12-09T09:47:40.912Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:47:40 PM
+2024-12-09T09:47:44.607Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:47:44 PM
+2024-12-09T09:47:51.809Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:47:51 PM
+2024-12-09T09:47:54.717Z [[31merror[39m]: Unexpected error: User is not found
+2024-12-09T09:48:06.155Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:48:06 PM
+2024-12-09T09:48:10.817Z [[31merror[39m]: Unexpected error: User is not found
+2024-12-09T09:48:58.999Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:48:58 PM
+2024-12-09T09:49:00.234Z [[31merror[39m]: Unexpected error: User not found
+2024-12-09T09:50:23.763Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:50:23 PM
+2024-12-09T09:50:30.815Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:50:30 PM
+2024-12-09T09:50:32.395Z [[31merror[39m]: Unexpected error: User not found
+2024-12-09T09:50:39.980Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:50:39 PM
+2024-12-09T09:50:51.106Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:50:51 PM
+2024-12-09T09:50:58.846Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:50:58 PM
+2024-12-09T09:51:01.461Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:51:01 PM
+2024-12-09T09:51:37.400Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:51:37 PM
+2024-12-09T09:51:39.808Z [[31merror[39m]: User not found
+2024-12-09T09:51:50.051Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:51:50 PM
+2024-12-09T09:51:54.209Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:51:54 PM
+2024-12-09T09:51:56.380Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:51:56 PM
+2024-12-09T09:53:56.921Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:53:56 PM
+2024-12-09T09:53:58.509Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:53:58 PM
+2024-12-09T09:54:16.811Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:54:16 PM
+2024-12-09T09:54:18.509Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:54:18 PM
+2024-12-09T09:54:23.665Z [[31merror[39m]: Password Matching Failed
+2024-12-09T09:54:35.873Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:54:35 PM
+2024-12-09T09:54:37.439Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:54:37 PM
+2024-12-09T09:54:38.230Z [[31merror[39m]: Incorrect password
+2024-12-09T09:54:53.398Z [[31merror[39m]: "name" must only contain alpha-numeric characters
+2024-12-09T09:55:46.004Z [[31merror[39m]: Incorrect password
+2024-12-09T09:56:07.286Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:56:07 PM
+2024-12-09T09:56:40.979Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:56:40 PM
+2024-12-09T09:56:44.082Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:56:44 PM
+2024-12-09T09:56:46.590Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:56:46 PM
+2024-12-09T09:57:03.122Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:57:03 PM
+2024-12-09T09:57:44.792Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 2:57:44 PM
+2024-12-09T10:04:05.805Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:04:05 PM
+2024-12-09T10:05:51.324Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:05:51 PM
+2024-12-09T10:05:58.452Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:05:58 PM
+2024-12-09T10:08:07.601Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:08:07 PM
+2024-12-09T10:08:10.314Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:08:10 PM
+2024-12-09T10:08:48.795Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:08:48 PM
+2024-12-09T10:08:53.518Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:08:53 PM
+2024-12-09T10:08:59.904Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:08:59 PM
+2024-12-09T10:09:07.467Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:09:07 PM
+2024-12-09T10:09:37.805Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:09:37 PM
+2024-12-09T10:09:39.650Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:09:39 PM
+2024-12-09T10:09:45.500Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:09:45 PM
+2024-12-09T10:10:01.391Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:10:01 PM
+2024-12-09T10:10:08.310Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:10:08 PM
+2024-12-09T10:10:10.920Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:10:10 PM
+2024-12-09T10:10:13.836Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:10:13 PM
+2024-12-09T10:10:29.695Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:10:29 PM
+2024-12-09T10:10:35.798Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:10:35 PM
+2024-12-09T10:10:38.257Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:10:38 PM
+2024-12-09T10:10:55.737Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:10:55 PM
+2024-12-09T10:11:11.886Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:11:11 PM
+2024-12-09T10:11:14.982Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:11:14 PM
+2024-12-09T10:11:16.782Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:11:16 PM
+2024-12-09T10:11:26.531Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:11:26 PM
+2024-12-09T10:11:45.637Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:11:45 PM
+2024-12-09T10:12:10.452Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:12:10 PM
+2024-12-09T10:12:56.263Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:12:56 PM
+2024-12-09T10:13:11.142Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:13:11 PM
+2024-12-09T10:13:19.167Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:13:19 PM
+2024-12-09T10:14:08.294Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:14:08 PM
+2024-12-09T10:17:24.721Z [[32minfo[39m]: Shutting down the server. Date & Time is: Monday, December 9, 2024 at 3:14:08 PM
+2024-12-09T10:18:00.162Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:18:00 PM
+2024-12-09T10:18:02.467Z [[31merror[39m]: Unexpected error: 
+Invalid `prisma.user.create()` invocation in
+E:\sentinel_backend\src\routes\User.ts:43:36
+
+  40 const value = await schema.validateAsync(body, { abortEarly: false }); // Validate data
+  41 
+  42 value.password = await hash(value.password, 10);
+→ 43 const user = await prisma.user.create(
+Unique constraint failed on the fields: (`name`)
+2024-12-09T10:59:42.043Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 3:59:42 PM
+2024-12-09T11:00:23.616Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:00:23 PM
+2024-12-09T11:00:31.062Z [[31merror[39m]: Unexpected error: 
+Invalid `prisma.user.create()` invocation in
+E:\sentinel_backend\src\routes\User.ts:45:36
+
+  42 const value = await schema.validateAsync(body, { abortEarly: false }); // Validate data
+  43 
+  44 value.password = await hash(value.password, 10);
+→ 45 const user = await prisma.user.create(
+Unique constraint failed on the fields: (`name`)
+2024-12-09T11:01:00.242Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:01:00 PM
+2024-12-09T11:01:02.112Z [[31merror[39m]: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+E:\sentinel_backend\src\routes\User.ts:45:36
+
+  42 const value = await schema.validateAsync(body, { abortEarly: false }); // Validate data
+  43 
+  44 value.password = await hash(value.password, 10);
+→ 45 const user = await prisma.user.create(
+Unique constraint failed on the fields: (`name`)
+2024-12-09T11:02:04.963Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:02:04 PM
+2024-12-09T11:02:14.036Z [[31merror[39m]: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+E:\sentinel_backend\src\routes\User.ts:45:36
+
+  42 const value = await schema.validateAsync(body, { abortEarly: false }); // Validate data
+  43 
+  44 value.password = await hash(value.password, 10);
+→ 45 const user = await prisma.user.create(
+Unique constraint failed on the fields: (`name`)
+2024-12-09T11:03:46.309Z [[32minfo[39m]: Shutting down the server. Date & Time is: Monday, December 9, 2024 at 4:02:04 PM
+2024-12-09T11:09:39.475Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:09:39 PM
+2024-12-09T11:09:40.917Z [[31merror[39m]: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+E:\sentinel_backend\src\routes\User.ts:45:36
+
+  42 const value = await schema.validateAsync(body, { abortEarly: false }); // Validate data
+  43 
+  44 value.password = await hash(value.password, 10);
+→ 45 const user = await prisma.user.create(
+Unique constraint failed on the fields: (`name`)
+2024-12-09T11:10:33.814Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:10:33 PM
+2024-12-09T11:10:39.181Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:10:39 PM
+2024-12-09T11:12:30.610Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:12:30 PM
+2024-12-09T11:12:39.626Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:12:39 PM
+2024-12-09T11:13:09.483Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:13:09 PM
+2024-12-09T11:13:16.918Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:13:16 PM
+2024-12-09T11:13:27.968Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:13:27 PM
+2024-12-09T11:25:08.192Z [[32minfo[39m]: Test end point is hit at Monday, December 9, 2024 at 4:13:27 PM
+2024-12-09T11:28:19.721Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:28:19 PM
+2024-12-09T11:28:31.347Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:28:31 PM
+2024-12-09T11:29:13.989Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:29:13 PM
+2024-12-09T11:29:15.994Z [[32minfo[39m]: Server is running at: http://localhost:3000 at Monday, December 9, 2024 at 4:29:15 PM
+2024-12-09T12:01:02.182Z [[32minfo[39m]: Shutting down the server. Date & Time is: Monday, December 9, 2024 at 4:29:15 PM
